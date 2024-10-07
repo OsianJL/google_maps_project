@@ -30,6 +30,7 @@
     "@faker-js/faker": "^9.0.3",
     "@types/faker": "^6.6.9",
     "@types/google.maps": "^3.58.1",
+    "dotenv": "^16.4.5",
     "faker": "^6.6.6"
   }
 }
