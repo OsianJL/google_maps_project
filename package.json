@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/OsianJL/google_maps_project#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "typescript": "^5.6.2"
   },
   "dependencies": {
     "@faker-js/faker": "^9.0.3",
