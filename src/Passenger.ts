@@ -1,11 +1,11 @@
-import { faker } from "@faker-js/faker";
 import { Person } from "./Person";
+import { randFullName, randLatitude, randLongitude } from '@ngneat/falso';
 
 export class Passenger extends Person {
   constructor() {
-    super(faker.person.firstName(), {
-      lat: faker.location.latitude(),
-      lng: faker.location.longitude(),
+    super(randFullName(), {
+      lat: randLatitude(),
+      lng: randLongitude(),
     });
   }
 }

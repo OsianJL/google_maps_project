@@ -6,13 +6,16 @@
     <title>Mi Proyecto con Google Maps</title>
   </head>
   <body>
-    <div id="map"></div>
+    <div class="contenedor-sombra">
+      <div id="map"></div>
+    </div>
 
     <script type="module" src="./src/index.ts"></script>
 
     <script
-      src="https://maps.googleapis.com/maps/api/js?key={GOOGLE_API_KEY}&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAswiufy9PJWvH1RlfQv6uLYKvlLGChs_I&libraries=marker&callback=initMap"
       async
+      defer
     ></script>
   </body>
 </html>
