@@ -17,7 +17,10 @@ export class Maps {
     }
    
     AddMarker(mappable: Mappable){
-        new google.maps.marker.AdvancedMarkerElement({
+        const infoWindow = new google.maps.InfoWindow({
+            content: "Hello world"
+        })
+        const marker = new google.maps.marker.AdvancedMarkerElement({
             map:this.googleMap,
             position: {
                 lat: mappable.getLocation.lat,
@@ -25,7 +28,9 @@ export class Maps {
             }
         })
 
-        
+        marker.addListener('click', ()=>{
+            infoWindow.open(this.googleMap, marker)
+        })
     }
 
 
